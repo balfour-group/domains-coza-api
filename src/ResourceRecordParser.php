@@ -130,6 +130,7 @@ abstract class ResourceRecordParser
                 break;
             case 'TXT':
                 $rdata = Factory::txt($record['content']);
+                break;
         }
 
         $resourceRecord = new ResourceRecord;
